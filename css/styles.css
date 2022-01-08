@@ -157,9 +157,18 @@ body {
 
 .hero {
   padding: 200px 4px;
-
   text-align: center;
   background-color: #2F303A;
+  background-image: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+  ), url(../images/hero-bcg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -210,6 +219,15 @@ body {
 
 .about-list-item + .about-list-item {
   margin-left: 30px;
+}
+
+.features {
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 .about-list-aftertitle {
@@ -310,13 +328,62 @@ body {
   color: var(--secondary-text-color);
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-item + .social-item {
+  margin-left: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+
+/*-------------------CLIENTS----------------------  */
+
+.clients-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--Primary-text-color);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+
+}
+
 /* ------------------PAGE PORTFOLIO----------------- */
 
 /* -------------------MAIN-------------------- */
 
-.hero-projects {
-  background-color: #FFFFFF;
-}
 
 .hero-list {
   display: flex;
@@ -363,10 +430,6 @@ body {
   text-align: left;
 }
 
-/* .project-link {
-  text-align: left;
-} */
-
 .project-container {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
@@ -398,6 +461,10 @@ body {
 
 .footer {
   background-color: #2F303A;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer-list {
@@ -441,4 +508,37 @@ body {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--hover-background-color);
+}
+
+.join-container {
+  padding-top: 72px;
+  margin-left: 70px;
+}
+
+.join {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer-social-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
