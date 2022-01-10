@@ -14,3 +14,19 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.icon-company {
+  width: 2.0888671875em;
+}
+
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
+.icon-foster {
+  width: 2.0234375em;
+}
+
+.icon-smartphone {
+  width: 0.625em;
+}
